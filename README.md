@@ -37,13 +37,13 @@ This project was a praactical exercise in HTML5, CSS, and responsive design prin
 - 'biografia.html' - Information about Emily Dickinson's life
 - 'poesia.html' - Information about Emily Dickinson's style and themes
 - 'biblioteca.html' - Library of Emily Dickinson's work
-- + files for every poem included in the website!
+- files for every poem included in the website!
  
 ---
 
 ## Technologies Used
 
-HTML5 - Semantic structure
+HTML5 - Semantic structure <br>
 CSS3 - Styling and responsive design
 
 ## License
