@@ -1,0 +1,536 @@
+*{
+    box-sizing: border-box;
+}
+
+.playfair-display-custom{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.open-sans-custom{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: #f8f7f2;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1{font-size: 3.5em; font-family: "Playfair Display", serif;}
+h2{font-size: 2.7em; font-family: "Playfair Display", serif;}
+h3{font-size: 2em; font-family: "Playfair Display", serif;}
+p{font-size: 1.25em; font-family: "Open Sans", sans-serif;}
+ul{list-style: none; font-family: "Open Sans", sans-serif;}
+li{font-size: 1.25em; font-family: "Open Sans", sans-serif;}
+a{text-decoration: none;}
+
+button{
+    background-color: #5f432c;
+    color: #f8f7f2;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+button:hover{
+    background-color: #cbc7b7;
+    color: #48392e;
+}
+
+.arrow{
+    margin-left: 15px;
+}
+
+/* === HEADER === */
+
+header{
+    background-color: #cbc7b7;
+} 
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: #f8f7f2;
+    margin: 0;
+    padding: 25px 35px;
+    font-size: 1.6em;
+
+}
+
+.logo .italic{
+    font-style: italic;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+header nav a{
+    padding: 15px 12px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #48392e;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header a:hover{
+    background-color: #48392e;
+    color: #f8f7f2;
+}
+
+/* === HERO === */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #f8f7f2;
+    background-image: linear-gradient(
+        0deg, 
+        rgba(72,57,46,0.5), 
+        rgba(72,57,46,0.5)
+        ), 
+        url(../images/Emily.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+#hero h1{
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+/* === CITAS === */
+
+#quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px 35px;
+    margin: auto;
+    background-color: #cbc7b7;
+    color: #f8f7f2;
+}
+
+#quote p{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+#cita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px 35px;
+    margin: auto;
+    color: #48392e;
+}
+
+#cita p{
+    font-family: "Playfair Display", serif;
+    font-size: 0.8em;
+    font-style: italic;
+    align-self: flex-end;
+}
+
+#cita .autora{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    align-self: flex-end;
+}
+
+/* === DETALLES === */
+
+#detalles{
+    background-color: #cbc7b7;
+    color: #48392e;
+    padding: 20px;
+}
+
+#detalles .container{
+    padding: 15px 0px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#detalles h2{
+    margin-top: 0;
+}
+
+#detalles .seccion{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px 0;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.seccion:first-child{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(72,57,46,0.5), 
+        rgba(72,57,46,0.5)
+        ), 
+        url(../images/Dickinson_family.jpg);
+}
+
+.seccion:nth-child(2){
+    background-image: linear-gradient(
+        0deg, 
+        rgba(72,57,46,0.5), 
+        rgba(72,57,46,0.5)
+        ), 
+        url(../images/Collection.jpg);
+}
+
+.seccion:nth-child(3){
+    background-image: linear-gradient(
+        0deg, 
+        rgba(72,57,46,0.5), 
+        rgba(72,57,46,0.5)
+        ), 
+        url(../images/Handwritten_poem.jpeg);
+}
+
+.seccion button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === OBRAS === */
+
+#obras .container{
+    padding: 15px 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#obras h2, #obras p, #obras ul{
+    color: #48392e;
+}
+
+#obras p{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#obras ul{
+    margin-left: 0cm;
+    margin-bottom: 40px;
+}
+
+#obras li{
+    margin-bottom: 15px;
+}
+
+#obras a{
+    text-decoration: none;
+    color: #48392e;
+}
+
+#obras a:hover{
+    color: #cbc7b7;
+}
+
+
+/* === TRIBUTOS === */
+
+#tributos .container{
+    padding: 15px 0px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#tributos{
+    background-color: #cbc7b7;
+    color: #48392e;
+    display: flex;
+    padding: 20px;
+}
+
+#tributos h2{
+    margin-top: 0;
+}
+
+#tributos a{
+    color: #48392e;
+}
+
+#tributos a:hover{
+    color: #f8f7f2;
+}
+
+#tributos .date{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#tributos .title{
+    font-weight: bold;
+}
+
+#tributos .actividades{
+    margin-bottom: 50px;
+}
+
+#tributos div{
+    margin-bottom: 40px;
+}
+
+/* === RECURSOS === */
+
+#recursos .container{
+    padding: 15px 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.secre{
+    display: flex;
+    flex-direction: column;
+}
+
+.secciondos{
+    padding: 1.5rem;
+}
+
+#recursos{
+    color: #48392e;
+}
+
+#recursos h3{
+    background-color: #48392e;
+    color: #f8f7f2;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#recursos p{
+    text-align: center;
+}
+
+#recursos a{
+    color: #48392e;
+    font-style: italic;
+}
+
+#recursos a:hover{
+    color: #cbc7b7;
+}
+
+/* === BIBLIOTECA === */
+
+#biblioteca{
+    color: #48392e;
+}
+
+#biblioteca .container{
+    padding: 15px 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#biblioteca .box{
+    background-color: #cbc7b7;
+    border-color: #48392e;
+    border-style: solid;
+    text-align: center;
+    padding: 25px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+#biblioteca .box p{
+    color: #48392e;
+    margin-bottom: 40px;
+}
+
+#biblioteca .box a{
+    background-color: #5f432c;
+    color: #f8f7f2;
+    padding: 10px;
+    width: 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#biblioteca .box a:hover{
+    background-color: #f8f7f2;
+    color: #48392e;
+}
+
+/* === NEWSLETTER === */
+
+#newsletter{
+    font-family: "Open Sans", sans-serif;
+    color: #48392e;
+}
+
+#newsletter .logo{
+    font-size: 1.5em;
+} 
+
+#newsletter .about .logo{
+    font-size: 1.25em;
+}
+
+#newsletter input[type="text"],
+#newsletter input[type="email"]{
+    border: 4px solid #48392e;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+#newsletter input[type="text"]::placeholder,
+#newsletter input[type="email"]::placeholder{
+    color: #48392e;
+    font-family: "Open Sans", sans-serif;
+    opacity: 0.7;
+}
+
+#newsletter input[type="checkbox"]{
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#newsletter button{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === FOOTER === */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #cbc7b7;
+    margin-top: 50px;
+}
+
+/* === MEDIA === */
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero{
+        width: 100%;
+    }
+    #detalles .info{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #detalles .seccion{
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+    #recursos .secre{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #recursos h3{
+        padding: 20px;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 750px){
+    header nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #cita p{
+        align-self: center;
+    }
+    #cita .autora{
+        align-self: center;
+    }
+    #detalles h2{
+        text-align: center;
+    }
+    #obras .container{
+        text-align: center;
+    }
+    #obras li{
+        flex-direction: column;
+        align-items: center;
+    }
+    #obras ul{
+        padding-left: 0;
+    }
+    #tributos{
+        text-align: center;
+    }
+    #recursos h2{
+        text-align: center;
+    }
+    #biblioteca h2{
+        text-align: center;
+    }
+    #newsletter{
+        text-align: center;
+    }
+}
