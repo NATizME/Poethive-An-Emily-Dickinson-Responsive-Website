@@ -1,6 +1,6 @@
 # About Poethive - An Emily Dickinson Responsive Website
 
-**Poethive** is a responsive website dedicated to **Emily Dickinson** and her poetry, developed by using HTML5 and CSS only. As one of my first projects for my Master's program, it has a minimal yet sophisticated design. <br>
+**Poethive** is a responsive website dedicated to **Emily Dickinson** and her poetry, developed by using HTML5 and CSS only. As one of my first projects for my Master's program, it has a minimal yet sophisticated design. <br><br>
 Clicking on the folder above, you can easily deploy the websites' front-end design.
 
 ## Table of Contents
@@ -14,7 +14,7 @@ Clicking on the folder above, you can easily deploy the websites' front-end desi
 
 ## Description
 
-The goal of this project is to create an appealing, well-structured website to showcase Emily Dickinson's life and poetry. The site is fully responsive, ensuring compatibility with desktop, tablet and mobile devices. <br>
+The goal of this project is to create an appealing, well-structured website to showcase Emily Dickinson's life and poetry. The site is fully responsive, ensuring compatibility with desktop, tablet and mobile devices. <br><br>
 This project was a praactical exercise in HTML5, CSS, and responsive design principles.
 
 ---
